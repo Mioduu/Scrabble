@@ -1,10 +1,10 @@
+
 html, body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
   background: linear-gradient(#e66465, #9198e5)
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -64,6 +64,7 @@ html, body {
   align-items: center;
 }
 
+<<<<<<< HEAD
 #playersAmmount {
   position: absolute;
   top: 40%;
@@ -85,3 +86,37 @@ html, body {
   border: 3px solid black;
   border-radius: 10%;
 }
+=======
+.menuImages {
+  position: fixed;   /* zajmuje cały ekran */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+#img1 {
+  position: fixed;
+  left: 0%;
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: 5px;
+  border-color: black;
+  border-style: solid;
+}
+#img2 {
+  position: fixed;
+  right: 0%;
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: 5px;
+  border-color: black;
+  border-style: solid;
+}
+
+
+>>>>>>> f5ce282 (Dodano obrazki do menu)
