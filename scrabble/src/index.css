@@ -38,6 +38,7 @@ html, body {
   display: flex;
   justify-content: center;
   font-size: 10vh;
+  color: white;
 }
 
 .menuButtons {
