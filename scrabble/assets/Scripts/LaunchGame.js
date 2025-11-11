@@ -2,7 +2,6 @@ import { elements } from "./dom.js"
 const { startBtn, settingsBtn, title, localBtn, onlineBtn, playersAmmount } = elements
 
 document.addEventListener("DOMContentLoaded", () => {
-    playersAmmount.style.display = "none"
     localBtn.style.display = "none"
     onlineBtn.style.display = "none"
 })

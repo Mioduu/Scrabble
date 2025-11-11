@@ -16,7 +16,7 @@ export function hideMenu() {
         title.textContent = "Lobby settings:"
         title.classList.remove("fade-out")
         title.classList.add("fade-in")
-        playersAmmount.style.display = "flex"
+        playersAmmount.removeAttribute("hidden")
         setTimeout(() => {
             localBtn.classList.remove("fade-in");
             onlineBtn.classList.remove("fade-out");
@@ -27,6 +27,5 @@ export function hideMenu() {
 
 export function startGame() {
     title.style.display = "none"
-    playersAmmount.style.display = "none"
-    
+    playersAmmount.hidden = true
 }

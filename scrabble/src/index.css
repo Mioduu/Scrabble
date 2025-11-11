@@ -1,10 +1,10 @@
-
 html, body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
   background: linear-gradient(#e66465, #9198e5)
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +21,11 @@ html, body {
     transform: translateY(0);
   }
 }
+
+input[type="radio"] {
+  display: none;
+}
+
 
 .fade-out {
   opacity: 0 !important;
@@ -65,29 +70,6 @@ html, body {
   align-items: center;
 }
 
-<<<<<<< HEAD
-#playersAmmount {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-#playersAmmount label {
-  font-family: "Roboto Slab", serif;
-  font-size: 4vh;
-}
-
-#enterGame {
-  font-family: "Roboto Slab", serif;
-  font-size: 4vh;
-  border: 3px solid black;
-  border-radius: 10%;
-}
-=======
 .menuImages {
   position: fixed;   /* zajmuje cały ekran */
   top: 0;
@@ -120,4 +102,40 @@ html, body {
 }
 
 
->>>>>>> f5ce282 (Dodano obrazki do menu)
+#playersAmmount {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  max-width: 100px;
+}
+
+#playersAmmount label {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#playersAmmount label:hover {
+  background-color: #4189e0;
+}
+
+#playersAmmount input[type="radio"]:checked+label {
+  background-color: #4189e0;
+}
+
+#enterGame {
+  margin-top: 1rem;
+  font-size: 4vh;
+  border: 3px solid black;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
